@@ -1,0 +1,28 @@
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .totalPrice {
+    text-decoration: none;
+    color: #009900;
+    font-weight: bold;
+  }
+
+  .cart button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #009900;
+    border: 1px solid #009900;
+    cursor: pointer;
+  }
+
+  .cart button:hover {
+    background-color: #009900;
+    color: #fff;
+  }

@@ -1,0 +1,54 @@
+.form-pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s;
+  }
+  
+  .form-pop-up.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s;
+  }
+  
+  .form-pop-up form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .form-pop-up form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .form-pop-up form input[type="text"],
+  .form-pop-up form input[type="email"],
+  .form-pop-up form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  
+  .form-pop-up form textarea {
+    height: 150px;
+  }
+  
+  .form-pop-up form button[type="submit"] {
+    float: right;
+  }  
